@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ТехноСервис</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#home">ТехноСервис</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Открыть меню">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Услуги</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#advantages">Преимущества</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Заявка на диагностику</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="container py-5 text-center">
+      <h1 class="display-4 fw-bold">ТехноСервис</h1>
+      <p class="lead">Ремонт и обслуживание компьютеров и ноутбуков</p>
+      <a href="#services" class="btn btn-primary btn-lg">Посмотреть услуги</a>
+    </section>
+
+    <section id="services" class="container py-5">
+      <h2 class="text-center mb-4">Услуги</h2>
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title h5">Диагностика компьютера</h3>
+              <p class="card-text">Поиск неисправностей и определение необходимых работ.</p>
+              <a href="#advantages" class="btn btn-primary">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title h5">Ремонт ноутбуков</h3>
+              <p class="card-text">Замена неисправных компонентов и восстановление работы устройства.</p>
+              <a href="#advantages" class="btn btn-primary">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title h5">Настройка программ</h3>
+              <p class="card-text">Установка и настройка операционной системы и программ.</p>
+              <a href="#advantages" class="btn btn-primary">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="advantages" class="container py-5">
+      <h2 class="text-center mb-4">Преимущества сервиса</h2>
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <div class="p-3 border bg-light">
+            <h3 class="h5">Точная диагностика</h3>
+            <p class="mb-0">Определяем причину неисправности перед началом ремонта.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border bg-light">
+            <h3 class="h5">Гарантия на работы</h3>
+            <p class="mb-0">Предоставляем гарантию на выполненный ремонт.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border bg-light">
+            <h3 class="h5">Согласование стоимости</h3>
+            <p class="mb-0">Сообщаем стоимость до начала работ.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="h4 mb-3">Часто задаваемые вопросы</h3>
+      <div class="accordion" id="infoAccordion">
+        <div class="accordion-item">
+          <h4 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answerOne" aria-expanded="true" aria-controls="answerOne">
+              Сколько длится диагностика?
+            </button>
+          </h4>
+          <div id="answerOne" class="accordion-collapse collapse show" data-bs-parent="#infoAccordion">
+            <div class="accordion-body">Обычно диагностика занимает один рабочий день.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answerTwo" aria-expanded="false" aria-controls="answerTwo">
+              Предоставляется ли гарантия?
+            </button>
+          </h4>
+          <div id="answerTwo" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+            <div class="accordion-body">Да, срок гарантии зависит от вида выполненных работ.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="container py-5">
+      <h2 class="mb-4">Заявка на диагностику</h2>
+      <form>
+        <div class="mb-3">
+          <label for="userName" class="form-label">Имя</label>
+          <input type="text" class="form-control" id="userName" placeholder="Введите имя">
+        </div>
+        <div class="mb-3">
+          <label for="userEmail" class="form-label">Электронная почта</label>
+          <input type="email" class="form-control" id="userEmail" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Сообщение</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Опишите неисправность"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container-fluid bg-dark text-light py-4">
+    <div class="container text-center">
+      <p class="mb-0">Телефон: +7 (900) 123-45-67 | Электронная почта: info@technoservice.example | Режим работы: ежедневно с 9:00 до 20:00</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
